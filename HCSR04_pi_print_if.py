@@ -43,7 +43,7 @@ if __name__ == '__main__':
     try:
         while True:
             dist = distance()
-            if dist => 2 and dist =< 5:
+            if 2 <= dist <= 7:
                 print ("Measured Distance = %.1f cm" % dist)
                 time.sleep(1)
  

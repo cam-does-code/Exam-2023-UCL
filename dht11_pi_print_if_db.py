@@ -16,7 +16,7 @@ while True:
     try:
         temp = sensor.temperature
         humidity = sensor.humidity
-        if temp => 20 and temp =< 25:
+        if 20 <= temp <= 27:
           c.execute('INSERT INTO Dht VALUES(?,?)',(temp, humidity))
         print(c.execute("SELECT * FROM Dht WHERE temp").fetchall())
         print("Temperature: {}*C   Humidity: {}% ".format(temp, humidity))

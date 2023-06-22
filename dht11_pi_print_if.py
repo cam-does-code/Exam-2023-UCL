@@ -11,7 +11,7 @@ while True:
     try:
         temp = sensor.temperature
         humidity = sensor.humidity
-        if temp => 20 and temp =< 25:
+        if 20 <= temp <= 27:
           print("Temperature: {}*C   Humidity: {}% ".format(temp, humidity))
     except RuntimeError as error:
         print(error.args[0])
